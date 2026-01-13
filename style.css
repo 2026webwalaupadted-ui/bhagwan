@@ -1,0 +1,1459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.menu i {
+    display: none;
+}
+
+/* Toggle Button */
+.app-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #f05a28, #8a2387);
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Overlay */
+.app-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box */
+.app-box {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Close */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Logo */
+.app-logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.app-box h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.app-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Price */
+.price-box {
+    background: linear-gradient(135deg, #f05a28, #8a2387);
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.price-box h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Buttons */
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.download-btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.download-btn.android {
+    background: #34a853;
+}
+
+.download-btn.ios {
+    background: #000;
+}
+
+/* Note */
+.note {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #777;
+}
+
+
+.top1 {
+    height: 40px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#man {
+    background-color: white;
+}
+
+.top1 img {
+    height: 100%;
+    width: 8vw;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/* nav wala part yha se start kreghe */
+nav {
+    width: 100%;
+    height: 160px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+
+
+.top2 {
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.asd {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.assianpaint img {
+    width: 12vw;
+}
+
+.search-wrapper input {
+    outline: none;
+    border: none;
+    height: 70%;
+    width: 20vw;
+    font-size: 1vw;
+}
+
+.search-wrapper {
+    width: 25vw;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.search-wrapper i {
+    font-weight: 500;
+}
+
+/* asd2 wala kamm kr rhe hain */
+.asd2 {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.icons {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+
+}
+
+.icons i {
+    font-size: 1.4vw;
+}
+
+.asd2 button {
+    background-color: #FCAF17;
+    height: 5vh;
+    width: 13vw;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 1.1vw;
+    cursor: pointer;
+    border: none;
+}
+
+/* niche wala nav start hota hai ab */
+.top3 {
+    height: 45px;
+    display: flex;
+}
+
+.top31 {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.top32 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 2vw;
+    font-size: 1.2vw;
+}
+
+/* firstpart yha se start hota hai */
+
+
+.firstpart {
+    width: 100%;
+    height: 100vh;
+}
+
+.vide {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.vide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+
+.overlay {
+    height: 97%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 80px;
+    gap: 600px;
+}
+
+.overlay1 {
+    width: 420px;
+    height: 400px;
+    margin-left: 40px;
+
+
+}
+
+.overlay2 {
+    width: 500px;
+    height: 450px;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 3.7vw;
+    line-height: 50px;
+    padding: 10px;
+}
+
+.khela {
+    width: inherit;
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.khela1 {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    height: 120px;
+    margin-left: 10px;
+    border-top-right-radius: 20px;
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+
+}
+
+.khela1 h5 {
+    font-weight: 500;
+}
+
+.khela01 {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #fff;
+}
+
+.khela2 {
+    padding-top: 44px;
+    line-height: 23px;
+    margin-inline: 20px;
+}
+
+#button1 {
+    background: transparent;
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    margin-block: 40px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-underline:hover,
+.no-underline:focus,
+.no-underline:active {
+    text-decoration: none;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a button {
+    text-decoration: none !important;
+}
+
+.baby {
+    text-decoration: none !important;
+}
+
+
+.overlay2 {
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.overlay2 h1 {
+    color: red;
+    font-weight: 100;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+
+.manav {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    object-fit: cover;
+}
+
+.soni {
+    width: 100%;
+    height: 33%;
+    display: flex;
+}
+
+.najro {
+    height: 100%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.najro img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.najro h5 {
+    font-size: 15px;
+}
+
+/* secondpart yha se start hota hai */
+.secondpart {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-top: 150px;
+}
+
+.badalta {
+    height: 504px;
+    width: 303px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.badalta h1 {
+    font-size: 2vw;
+    line-height: 60px;
+}
+
+
+.badalta p {
+    margin-top: 3px;
+    width: 106%;
+    font-size: 0.9vw;
+    margin-left: 21px;
+}
+
+.badalta button {
+    width: 16vw;
+    height: 6vh;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+    background: transparent;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+    margin-top: 21px;
+}
+
+.badalta button i {
+    font-size: 20px;
+}
+
+.badalta2 {
+    width: 100%;
+    height: 527px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.badalta2::-webkit-scrollbar {
+    height: 8px;
+}
+
+.badalta2::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.badalta2::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.badalta2::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+
+
+.track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.hila {
+    width: 303px;
+    height: 504px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+    flex-shrink: 0;
+}
+
+
+.saso {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.saso1 {
+    width: 100%;
+    height: 40%;
+}
+
+.katati1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in 4s;
+
+}
+
+.katati1:hover {
+    scale: 2;
+}
+
+.madar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* thirdpart ka kamm yha se start hota hai.. */
+.thirdpart {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.thirdpart1 {
+    width: 35%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thirdpart2 {
+    width: 65%;
+    height: 90vh;
+}
+
+.hasdetihai h1 {
+    font-size: 60px;
+    line-height: 56px;
+    color: #F14950;
+}
+
+.hasdetihai p {
+    font-size: 20px;
+}
+
+.hasdetihai {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.thirdpart02 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 200px;
+}
+
+.thirdpart002 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+}
+
+.thirdpart002 input {
+    display: block;
+    width: 60%;
+    border: none;
+    width: 440px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 17px;
+}
+
+.thirdpart090 {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.check {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.payar {
+    font-size: 0.8vw;
+    margin-top: 20px;
+}
+
+
+
+.button404 {
+    width: 230px;
+    margin: 8px;
+    height: 45px;
+    background-color: #FCAF17;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+
+}
+
+.bhak {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button404:hover {
+    background-color: yellow;
+}
+
+
+
+/* toggle wala kam.. */
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 42px;
+    height: 22px;
+    background: #ccc;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    top: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle input:checked+.slider {
+    background: #00c853;
+}
+
+.toggle input:checked+.slider::before {
+    transform: translateX(20px);
+}
+
+.text {
+    color: #000;
+}
+
+/* fourthpart ka kamm start hota hai */
+.fourthpart {
+    width: 100%;
+    height: 77vh;
+}
+
+.imagine {
+    width: 90%;
+    height: 100vh;
+
+}
+
+.imagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 80px;
+}
+
+.fourthpart h1 {
+    padding-left: 80px;
+
+}
+
+/* photopart ka part yha se start hota hai */
+
+.fifthpart {
+    width: 100%;
+    height: 80vh;
+    margin-top: 30vh;
+    display: flex;
+}
+
+.fifthpart1 {
+    width: 50%;
+    height: 430px;
+}
+
+.fifthpart2 {
+    width: 50%;
+    height: 430px;
+
+}
+
+.dur {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* faq wala part */
+.faq {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq1 {
+    width: 90%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.maderjhat {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid black;
+
+}
+
+.faq1 h1 {
+    text-align: center;
+}
+
+.aana p {
+    margin-top: 10px;
+}
+
+.baby {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+/* last part ka code yha se start hota hai .. 
+jo ki abhi pending hai  */
+.lastpart {
+    display: none;
+}
+
+
+
+/* yha se responsive krna start krte hain */
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .top1 {
+        height: 45px;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        height: 14.5vh;
+    }
+
+    #man {
+        background-color: white;
+    }
+
+    .top1 img {
+        width: 50%;
+        height: 91%;
+    }
+
+    img:hover {
+        cursor: pointer;
+    }
+
+    .menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .assianpaint {
+        display: none;
+    }
+
+    .search-wrapper input,
+    .camera-icon {
+        display: none;
+    }
+
+    .search-wrapper {
+        width: auto;
+        border: none;
+    }
+
+    .search-wrapper i {
+        font-size: 22px;
+    }
+
+    /* icons right side */
+    .asd {
+        width: auto;
+        gap: 15px;
+    }
+
+    .asd2 {
+        width: auto;
+        gap: 15px;
+    }
+
+    .icons {
+        width: auto;
+        gap: 15px;
+    }
+
+    .icons i {
+        font-size: 22px;
+    }
+
+    /* hide button */
+    .asd2 button {
+        display: none;
+    }
+
+    /* hide lower menu */
+    .top3 {
+        display: none;
+    }
+
+    .top2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20%;
+        padding: 10px;
+    }
+
+    #man1 {
+        display: none;
+    }
+
+    /* video wala part */
+    .vide {
+        width: 100%;
+        height: 493px;
+    }
+
+    .vide video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .firstpart {
+        height: 67vh;
+    }
+
+    /* firstpart ka start hota hai */
+
+    .overlay1 {
+        width: 300px;
+        height: 340px;
+        margin-left: 15px;
+        top: 60px;
+        left: 0px;
+        position: absolute;
+    }
+
+    .overlay1 h1 {
+        font-size: 6vw;
+        line-height: 30px;
+    }
+
+    .overlay2 {
+        position: absolute;
+        height: 307px;
+        top: 396px;
+        min-width: unset;
+        width: 90%;
+        left: 5%;
+    }
+
+
+    .overlay h1 {
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+    }
+
+    .secondpart {
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .badalta {
+        height: 256px;
+        margin-top: 16vh;
+        width: 90%;
+    }
+
+    .badlata img {
+        width: 38vw;
+    }
+
+
+    .badalta h1 {
+        font-size: 26px;
+        width: auto;
+    }
+
+    br.mahine {
+        display: none !important;
+    }
+
+    .badalta button {
+        margin-top: 4px;
+        width: 71vw
+    }
+
+    .badalta p {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .hila {
+        width: 233px;
+        height: 409px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+        flex-shrink: 0;
+    }
+
+    /* thridpart ka responsive start hota hai yha se */
+    .thirdpart {
+        width: 100%;
+        height: 118vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thirdpart2 {
+        width: 100%;
+    }
+
+    .thirdpart002 input {
+        width: 100%;
+    }
+
+    .thirdpart02 {
+        margin-top: 0;
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        padding-inline: 20px;
+        flex-direction: column;
+    }
+
+    .thirdpart002 {
+        width: 100%;
+    }
+
+    .thirdpart1 {
+        height: 34vh;
+        width: 100%;
+    }
+
+    .hasdetihai {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .badalta2 {
+        height: 432px;
+    }
+
+    .thirdpart090 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: max-content;
+        padding-left: 20px;
+    }
+
+    .check {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle {
+        margin-bottom: 10px;
+    }
+
+    .payar {
+        font-size: 2.8vw;
+        padding-left: 20px;
+    }
+
+    .fourthpart {
+        width: 100%;
+    }
+
+    .button404 {
+        width: 100%;
+        font-size: 6.2vw;
+    }
+
+    .imagine {
+        margin-left: 20px;
+        width: 90%;
+        height: 480px;
+    }
+
+    .imagine img {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fourthpart h1 {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* fifthpart ka responsiveness yha se start hota hai  */
+    .fifthpart {
+        width: 100%;
+        height: 80vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fifthpart1 {
+        width: 100%;
+        height: 430px;
+    }
+
+    .fifthpart2 {
+        width: 100%;
+        height: 430px;
+
+    }
+
+    .dur {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .faq {
+        width: 100%;
+        height: 110vh;
+    }
+
+    .aana p {
+        display: none;
+    }
+
+    .lastpart {
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        color: #fff;
+    }
+
+    .maderjhat h2 {
+        font-size: 5vw;
+    }
+
+    .baby {
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .baby:hover {
+        background-color: #ccc;
+    }
+
+    .baby i {
+        margin-left: 10px;
+
+    }
+
+    /* last wala part  ka responsive yha se start hota hai...  */
+
+    .lastpart {
+        width: 100%;
+        height: 190vh;
+    }
+
+    .container345 {
+        border-bottom: 2px solid grey;
+    }
+
+    .kuch {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+
+    .kuch1 {
+        border: 0.1px solid black;
+        width: 33.3%;
+        height: 10vh;
+    }
+
+    .kuch1 h2 {
+        line-height: 20px;
+        font-size: 17px;
+        margin-left: 10px;
+    }
+
+    .kuch img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .findastore {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        padding-inline: 20px;
+        gap: 60px;
+    }
+
+    .findastore img {
+        width: 120px;
+    }
+
+    .twobutton {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .india {
+        background-color: #2E2F32;
+        font-size: 5vw;
+        color: #fff;
+        border-radius: 7px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        width: 121px;
+        height: 58px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pincode {
+        background-color: #2E2F32;
+        color: #dacfcf;
+        font-size: 5vw;
+        border-radius: 7px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        width: 169px;
+        height: 60px;
+    }
+
+    .contact1 {
+        color: #fff;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+
+    .nitto {
+        font-size: 3.3vw;
+        display: flex;
+        justify-content: space-around;
+        margin-block: 10px;
+    }
+
+    .aaj {
+        margin-left: 20px;
+        font-size: 3.4vw;
+    }
+
+    .id {
+        width: 94%;
+        height: 8vh;
+        border-radius: 10px;
+        background-color: transparent;
+        color: #dacfcf;
+        font-size: 6vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline: 10px;
+        margin-block: 10px;
+        border: 1px solid #dacfcf;
+        cursor: pointer;
+    }
+
+    .hota {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 30vh;
+    }
+
+    .hota h4 {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .ensure {
+        margin-left: 10px;
+        font-size: 3.3vw;
+    }
+
+    .buttonkadiv {
+        width: 100%;
+        height: 31vh;
+        padding-block: 50px;
+        margin-left: 10px;
+    }
+
+    .buttonkadiv button {
+        width: fit-content;
+        height: 40px;
+        border-radius: 15px;
+        background-color: #232426;
+        color: grey;
+        margin-bottom: 18px;
+        font-size: 3.1vw;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #fff;
+
+    }
+
+    .buttonkadiv button:hover {
+        scale: 1.1;
+        transition: all 0.2s ease-in;
+    }
+
+    .old {
+        margin-left: 10px;
+        font-size: 3.3vw;
+
+    }
+
+    .image34 {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-inline: 10px;
+    }
+
+    .image34 img {
+
+        width: 50%;
+    }
+
+    .haha {
+        width: 100%;
+        height: 5vh;
+        padding: 10px;
+        font-size: 4vw;
+        font-weight: 100;
+    }
+
+    .iconsrohi {
+        width: 100%;
+        height: 7vh;
+        font-size: 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .larki34 {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 100;
+        color: grey;
+    }
+
+    .public h4 {
+        width: 100%;
+        height: 5vh;
+        background-color: #232426;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .About2 {
+        text-align: center;
+        margin-block: 20px;
+        padding-inline: 10px;
+    }
+
+    .lastpara {
+        width: 100%;
+        height: max-content;
+        background-color: black;
+        padding: 10px;
+        padding-bottom: 100px;
+    }
+
+    .lastpart {
+        display: block;
+    }
+}
